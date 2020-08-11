@@ -1,0 +1,63 @@
+site_name: AWS IoT Day 2020
+site_description: AWS IoT Day 在线网站
+site_author: AWS
+
+use_directory_urls: false
+
+nav:
+  - 首页: index.md
+  - 介绍: 
+      - 日程: agenda.md
+  - 动手实验: 
+      - '场景一: IoT 设备接入与控制':
+          - 实验介绍: lab/iot-connect.md
+          - 'Lab 0: 实验环境配置': lab/iot-connect/00_cloud9.md 
+          - 'Lab 1: IoT接入与消息发送': lab/iot-connect/01_connect_publish.md
+          - 'Lab 2: 设备状态控制': lab/iot-connect/02_control.md
+          - 'Lab 3: 数据实时展现': lab/iot-connect/03_data_visualize.md
+      - '场景二: 基于云端构建智能摄像头解决方案': 
+          - 实验介绍: lab/kvs.md
+          - 'Lab 0: 创建新用户': lab/kvs/docs/00_create_user.md 
+          - 'Lab 1: 创建Kinesis Video Stream视频流': lab/kvs/docs/01_create_kvs_stream.md
+          - 'Lab 2: 创建Ubuntu实例': lab/kvs/docs/02_create_ubuntu_instance.md
+          - 'Lab 3: 安装KVS运行环境': lab/kvs/docs/03_install_kvs_environment.md
+          - 'Lab 4: 播放演示': lab/kvs/docs/04_viewer_play.md
+
+
+  - AWS IoT 学习资源: 
+      - 文档链接: resources.md
+  - 历年回顾:
+      - 2019年: history/2019.md
+
+
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: indigo
+    accent: indigo
+  font: false
+  features:
+    - tabs
+    - instant
+  custom_dir: overrides
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+# Extras
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/linjungz
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/randylinjun
+
+extra_javascript:
+  - javascripts/umeng.js

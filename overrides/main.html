@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block extrahead %}
+  {% set title = config.site_name %}
+  {% if page and page.title and not page.is_homepage %}
+    {% set title = config.site_name ~ " - " ~ page.title | striptags %}
+  {% endif %}
+  {% set image = config.site_url ~ 'assets/images/banner.png' %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:image" content="{{ image }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/overrides.011ebae6.min.css' | url }}">
+{% endblock %}
+{% block announce %}
+  <a href="https://aws.amazon.com/cn/iot/?nc1=h_ls">
+    点击这里进入AWS官方网站，了解更多AWS IoT的相关信息
+  </a>
+{% endblock %}
+{% block content %}
+  {{ super() }}
+  <footer class="tx-content__footer md-typeset">
+  </footer>
+{% endblock %}
+
