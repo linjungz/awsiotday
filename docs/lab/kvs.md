@@ -1,5 +1,5 @@
 # 基于AWS Kinesis Video Stream动手搭建云Camera
-基于AWS KVS构建云Camera的演示环境，并作为IoT Builder's Day的动手实验材料
+基于AWS KVS构建云Camera的演示环境，并作为IoT  Day的动手实验材料
 
 ## 目标
 - 此实验基于ubuntu模拟camera设备,读取本地视频文件向Kinesis Video Stream推流 , media-viewer提供web演示播放视频流。

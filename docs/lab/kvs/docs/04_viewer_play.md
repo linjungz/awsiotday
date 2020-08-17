@@ -1,12 +1,8 @@
 ## Lab4:播放演示
 
-git clone --recursive https://github.com/aws-samples/amazon-kinesis-video-streams-media-viewer.git
+打开这个地址：
+https://aws-samples.github.io/amazon-kinesis-video-streams-media-viewer/
 
-或
-
-https://github.com/aws-samples/amazon-kinesis-video-streams-media-viewer 选择Download Zip 本地解压
-
-打开 <本地下载路径>/amazon-kinesis-video-streams-media-viewer/index.html
 ```
 Streaming Protocol              选择HLS
 Player                          选择HLS.js

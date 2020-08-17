@@ -4,10 +4,13 @@ site_author: AWS
 
 use_directory_urls: false
 
+repo_url: 'https://github.com/linjungz/awsiotday'
+
 nav:
   - 首页: index.md
   - 介绍: 
       - 日程: agenda.md
+      - 演讲材料: decks.md
   - 动手实验: 
       - '场景一: IoT 设备接入与控制':
           - 实验介绍: lab/iot-connect.md
@@ -22,12 +25,12 @@ nav:
           - 'Lab 2: 创建Ubuntu实例': lab/kvs/docs/02_create_ubuntu_instance.md
           - 'Lab 3: 安装KVS运行环境': lab/kvs/docs/03_install_kvs_environment.md
           - 'Lab 4: 播放演示': lab/kvs/docs/04_viewer_play.md
-
-
-  - AWS IoT 学习资源: 
-      - 文档链接: resources.md
-  - 历年回顾:
-      - 2019年: history/2019.md
+  - 学习资源: 
+      - 资源链接: resources.md
+  - 关于 AWS IoT Lab:
+      - AWS IoT Lab 介绍: iotlab/about.md
+      - 技术资源: iotlab/resources.md
+      
 
 
 
@@ -42,6 +45,7 @@ theme:
     - tabs
     - instant
   custom_dir: overrides
+  favicon: img/favicon.png
 
 # Extensions
 markdown_extensions:
